@@ -10,25 +10,27 @@
 <h1>Job Application</h1>
 <h3>Please fill out the following form to be considered for one of our open
 positions.</h3>
+
 <form action="/application-success" method="POST">
     <div>
-        <span class="bold">First Name </span><input type="text" name="firstname">
+        <label for="firstname">First Name </label><input type="text" id="firstname" name="firstname">
     </div>
     <div>
-        <span class="bold">Last Name </span><input type="text" name="lastname">
+        <label for="lastname">Last Name </label><input type="text" id="lastname" name="lastname">
     </div>
     <div>
-        <span class="bold">Salary Requirement</span><input type="text" name="salary">
+        <label for="salary_requirements">Salary Requirement</label><input type="text" id="salary_requirements" name="salary">
     </div>
     <div>
-        <span class="bold">Job</span> 
-            <select name="job">
+        <label for="job">Job</label> 
+            <select id="job" name="job">
                 <option value="software_engineer">Software Engineer</option>
                 <option value="qa_engineer">QA Engineer</option>
                 <option value="product_manager">Product Manager</option>
             </select>
         </span>
     </div>
-    <input type="submit">
+    <input type="submit" name="submit" value="Submit Application">
+</form>
 </body>
 </html>
